@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-p = Path(__file__).with_name('input.txt')
+p = Path(__file__).with_name("input.txt")
 with p.open("r") as file:
     groups = file.read().split("\n\n")
 
