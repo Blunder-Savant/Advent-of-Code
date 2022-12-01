@@ -1,2 +1,5 @@
-# Advent Of Code solutions, using Python v3.9.0
+# Advent Of Code solutions
+
+Implemented using Python v3.9.0
+
 https://adventofcode.com
