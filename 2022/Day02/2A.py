@@ -18,6 +18,12 @@ round_scores = {
     "won": 6
 }
 
+win_conditions = {
+    "X": "C",  # Rock defeats Scissors
+    "Y": "A",  # Paper defeats Rock
+    "Z": "B",  # Scissors defeats Paper
+}
+
 p = Path(__file__).with_name("input.txt")
 with p.open("r") as file:
     total_score = 0
@@ -27,7 +33,7 @@ with p.open("r") as file:
 
         total_score += shape_scores[my_move]
 
-        if shape_scores[my_move] - shape_scores[opponent_move] in {1, -2}:
+        if win_conditions[my_move] == opponent_move:
             total_score += round_scores["won"]
         elif shape_scores[my_move] == shape_scores[opponent_move]:
             total_score += round_scores["draw"]
