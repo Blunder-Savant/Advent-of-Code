@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from operator import truediv
 from pathlib import Path
 
 trees = list()
