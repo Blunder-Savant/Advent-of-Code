@@ -10,40 +10,36 @@ t_positions = {s}
 p = Path(__file__).with_name("input.txt")
 with p.open("r") as file:
     for line in file:
-        dir, num = line.split()
-        num = int(num)
+        dir, steps = line.split()
 
-        for move in range(num):
+        for step in range(int(steps)):
 
             h_row, h_col = h_prev_pos
             t_row, t_col = t_prev_pos
 
-            if dir == "U":
-                h_row += 1
-            if dir == "D":
-                h_row -= 1
-            if dir == "R":
-                h_col += 1
-            if dir == "L":
-                h_col -= 1
-    
-            h_adj = [(i,j) for i in (h_row-1,h_row,h_row+1) for j in (h_col-1,h_col,h_col+1)]
-    
-            if t_prev_pos not in h_adj:
-                if h_row != t_row and h_col != t_col:  # Check diagonal
-                    if dir == "U" or dir == "D":
-                        t_col = h_col
-                    if dir == "R" or dir == "L":
-                        t_row = h_row
-                    
-                if dir == "U":
-                    t_row += 1
-                if dir == "D":
-                    t_row -= 1
-                if dir == "R":
-                    t_col += 1
-                if dir == "L":
-                    t_col -= 1
+            if dir == "U": h_row += 1
+            if dir == "D": h_row -= 1
+            if dir == "R": h_col += 1
+            if dir == "L": h_col -= 1
+
+            dy_row = h_row - t_row
+            dx_col = h_col - t_col
+
+            if abs(dy_row) > 1 or abs(dx_col) > 1:
+
+                if abs(dy_row) > 1 and h_col == t_col:
+                    dy = 1 if dy_row > 0 else -1
+                    t_row += dy
+
+                elif abs(dx_col) > 1 and h_row == t_row:
+                    dx = 1 if dx_col > 0 else -1
+                    t_col += dx
+
+                else:
+                    dy = 1 if dy_row > 0 else -1
+                    dx = 1 if dx_col > 0 else -1
+                    t_row += dy
+                    t_col += dx
                 
                 t_positions.add((t_row, t_col))
 
