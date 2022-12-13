@@ -25,3 +25,5 @@ Each ⭐ is a link to the solution!
 | [Day 9](https://adventofcode.com/2022/day/9) | [⭐](2022/Day09/9A.py) | [⭐](2022/Day09/9B.py) |
 | [Day 10](https://adventofcode.com/2022/day/10) | [⭐](2022/Day10/10A.py) | [⭐](2022/Day10/10B.py) |
 | [Day 11](https://adventofcode.com/2022/day/11) | [⭐](2022/Day11/11A.py) | [⭐](2022/Day11/11B.py) |
+| [Day 12](https://adventofcode.com/2022/day/12) | [⭐](2022/Day12/12A.py) | [⭐](2022/Day12/12B.py) |
+| [Day 13](https://adventofcode.com/2022/day/13) | [⭐](2022/Day13/13A.py) | [⭐](2022/Day13/13B.py) |
