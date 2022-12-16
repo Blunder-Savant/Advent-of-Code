@@ -2,8 +2,7 @@
 
 from pathlib import Path
 
-grid = dict()
-grid_xrange = dict()
+grid_xrange = dict()  # {y: (x_min, x_max)} -- for each y-value, store the min-max x-value from each signal within range
 
 DISTRESS_BEACON_MIN = 0
 DISTRESS_BEACON_MAX = 4000000
@@ -15,9 +14,6 @@ with p.open("r") as file:
         sensor_y = int(line.split("=")[2][:-24])
         beacon_x = int(line.split("=")[3][:-3])
         beacon_y = int(line.split("=")[4][:-1])
-
-        grid[(sensor_x, sensor_y)] = "S"
-        grid[(beacon_x, beacon_y)] = "B"
 
         manhattan_dist = abs(sensor_x - beacon_x) + abs(sensor_y - beacon_y)
 
@@ -44,7 +40,7 @@ for y in grid_xrange:
         if x_min-1 <= conseq_max <= x_max:
             conseq_max = x_max
             continue
-        elif x_max <= conseq_max:
+        elif x_max < conseq_max:
             continue
         
         print((conseq_max + 1) * 4000000 + y)

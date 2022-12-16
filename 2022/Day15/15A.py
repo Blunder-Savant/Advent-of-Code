@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-grid = dict()
+grid = dict()  # {coordinate: type} where type is either {S, B, #}
 GIVEN_Y = 2000000
 
 p = Path(__file__).with_name("input.txt")
