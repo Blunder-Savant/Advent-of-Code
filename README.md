@@ -30,3 +30,7 @@ Each ⭐ is a link to the solution!
 | [Day 14](https://adventofcode.com/2022/day/14) | [⭐](2022/Day14/14A.py) | [⭐](2022/Day14/14B.py) |
 | [Day 15](https://adventofcode.com/2022/day/15) | [⭐](2022/Day15/15A.py) | [⭐](2022/Day15/15B.py) |
 | [Day 16](https://adventofcode.com/2022/day/16) | [⭐](2022/Day16/16A.py) | [⭐](2022/Day16/16B.py) |
+| [Day 17](https://adventofcode.com/2022/day/17) | [⭐](2022/Day17/17A.py) | [⭐](2022/Day17/17B.py) |
+| [Day 18](https://adventofcode.com/2022/day/18) | [⭐](2022/Day18/18A.py) | [⭐](2022/Day18/18B.py) |
+| [Day 19](https://adventofcode.com/2022/day/19) | :( | :( |
+| [Day 20](https://adventofcode.com/2022/day/20) | [⭐](2022/Day20/20A.py) | [⭐](2022/Day20/20B.py) |
