@@ -38,3 +38,4 @@ Each ⭐ is a link to the solution!
 | [Day 22](https://adventofcode.com/2022/day/22) | [⭐](2022/Day22/22A.py) | [⭐](2022/Day22/22B.py) |
 | [Day 23](https://adventofcode.com/2022/day/23) | [⭐](2022/Day23/23A.py) | [⭐](2022/Day23/23B.py) |
 | [Day 24](https://adventofcode.com/2022/day/24) | [⭐](2022/Day24/24A.py) | [⭐](2022/Day24/24B.py) |
+| [Day 25](https://adventofcode.com/2022/day/25) | [⭐](2022/Day25/25A.py) |
