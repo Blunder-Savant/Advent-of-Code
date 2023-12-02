@@ -7,6 +7,7 @@ I don't aim to be first on any leaderboard. I aim to have fun solving each puzzl
 ## Python version
 - Year 2020: [Python v3.9.0](https://www.python.org/downloads/release/python-390/)
 - Year 2022: [Python v3.11.1](https://www.python.org/downloads/release/python-3111/)
+- Year 2023: [Python v3.12](https://www.python.org/downloads/release/python-3120/)
 
 ## 2022 Results
 
