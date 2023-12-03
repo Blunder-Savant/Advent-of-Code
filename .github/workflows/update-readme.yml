@@ -1,0 +1,27 @@
+name: Update README
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+
+    - name: Run script to update README
+      run:
+        python generate_solution_tables.py
+        git add README.md
+        git commit -m "Beep boop, update README solution tables" || exit 0
+        git push
+  
