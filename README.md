@@ -13,6 +13,14 @@ I don't aim to be first on any leaderboard. I aim to have fun solving each puzzl
 
 Each ⭐ is a link to the solution!
 
+
+
+| Part | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 | Day 8 | Day 9 | Day 10 | Day 11 | Day 12 | Day 13 | Day 14 | Day 15 | Day 17 | Day 18 | Day 19 | Day 20 | Day 21 | Day 22 | Day 23 | Day 24 | Day 25 |
+|:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  |
+| 1 | [⭐](2022/Day01/1A.py) |
+| 2 | [⭐](2022/Day01/1B.py) |
+
+
 | Day | Part 1 | Part 2 |
 | :---: | :---: | :---: |
 | [Day 1](https://adventofcode.com/2022/day/1) | [⭐](2022/Day01/1A.py) | [⭐](2022/Day01/1B.py) |
