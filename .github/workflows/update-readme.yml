@@ -24,5 +24,5 @@ jobs:
         git config user.name 'github-actions[bot]'
         git config user.email 'github-actions[bot]@users.noreply.github.com'
         git add README.md
-        git commit -m "Beep boop, README solution tables updated" || exit 0
+        git commit -m "beep boop, README solution tables updated automatically" || exit 0
         git push
