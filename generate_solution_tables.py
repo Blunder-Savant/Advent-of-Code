@@ -59,3 +59,5 @@ if __name__ == "__main__":
     p = Path(__file__).with_name("README.md")
     with p.open("w", encoding="utf-8") as file:
         file.writelines(readme)
+
+    print("Executed generate_solution_tables.py")

@@ -21,7 +21,8 @@ jobs:
     - name: Run script to update README
       run: |
         python generate_solution_tables.py
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
         git add README.md
-        git commit -m "Beep boop, update README solution tables" || exit 0
+        git commit -m "Beep boop, README solution tables updated" || exit 0
         git push
-  
