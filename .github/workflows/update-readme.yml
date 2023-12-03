@@ -19,7 +19,7 @@ jobs:
         python-version: '3.12'
 
     - name: Run script to update README
-      run:
+      run: |
         python generate_solution_tables.py
         git add README.md
         git commit -m "Beep boop, update README solution tables" || exit 0
