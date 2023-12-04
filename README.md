@@ -2,7 +2,7 @@
 
 Solutions for [Advent of Code](https://adventofcode.com) in [Python](https://www.python.org/).
 
-I don't aim to be first on any leaderboard. I aim to have fun solving each puzzle, learn more about Python's [coding style](https://peps.python.org/pep-0008/), and attempt to come up with elegant and beautiful Pythonic solutions.
+I don't aim to be first on any leaderboard. I aim to have fun solving each puzzle, learn more about Python's [coding style](https://peps.python.org/pep-0008/), and attempt to come up with elegant Pythonic solutions.
 
 ## Python version
 - Year 2020: [Python v3.9.0](https://www.python.org/downloads/release/python-390/)
