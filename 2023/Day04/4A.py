@@ -12,15 +12,15 @@ def calculate_score(num):
     return 2 ** (num - 1)
 
 
+won_nums = list()
+
 for card in cards:
     _, winning_nums, my_nums = card.replace("|", ":").split(":")
+
     winning_nums = set(int(num) for num in winning_nums.split(" ") if num)
     my_nums = set(int(num) for num in my_nums.split(" ") if num)
 
-    if "won_nums" not in locals():
-        won_nums = [winning_nums.intersection(my_nums)]
-    else:
-        won_nums.append(winning_nums.intersection(my_nums))
+    won_nums.append(winning_nums.intersection(my_nums))
 
 total_points = sum(calculate_score(len(won_num)) for won_num in won_nums)
 print(total_points)
