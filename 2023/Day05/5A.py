@@ -15,7 +15,7 @@ for map in almanac[1:]:
     dst_id = map.split()[0].split("-")[2]
     ranges = [[int(num) for num in line.split()] for line in map.split("\n")[1:]]
 
-    master_map[src_id] = [dst_id, [(dst, src, src_len) for dst, src, src_len in ranges]]
+    master_map[src_id] = [dst_id, ranges]
 
 for seed in seeds:
     num = seed
