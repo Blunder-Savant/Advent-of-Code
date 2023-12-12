@@ -39,7 +39,7 @@ while coord_paths["0"][-1] != coord_paths["1"][-1]:
         coord = coord_paths[path][-1]
         pipe = surface_pipes[coord[0]][coord[1]]
 
-        next_pipe = [(x, y) for dx, dy in PIPE_MAP[pipe] if (x := coord[0] + dx, y:= coord[1] + dy) not in coord_paths[path]]
-        coord_paths[path].append(next_pipe[0])
+        next_coord = [(x, y) for dx, dy in PIPE_MAP[pipe] if (x := coord[0] + dx, y:= coord[1] + dy) not in coord_paths[path]][0]
+        coord_paths[path].append(next_coord)
 
 print(len(coord_paths["0"]) - 1)
